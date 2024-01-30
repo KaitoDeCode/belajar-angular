@@ -12,5 +12,11 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  /**
+   *
+   */
+  title:string = "Hello"
+  nama:string = "Adi Kurniawan"
+
 
 }
