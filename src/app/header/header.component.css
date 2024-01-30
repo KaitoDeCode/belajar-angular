@@ -28,3 +28,7 @@
   text-orientation: sideways;
   margin-top: 10px;
 }
+
+.text-underline{
+  text-decoration: underline;
+}
