@@ -5,9 +5,12 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
+  <div class="container">
     <p>
-      header works! {{ title + nama }}
+      Welcome <span>Todo Apps</span>
     </p>
+    <p>Ini adalah projek simple saya dalam belajar angular</p>
+  </div>
   `,
   styleUrl: './header.component.css'
 })
