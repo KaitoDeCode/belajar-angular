@@ -2,7 +2,12 @@
   <h2 class="container-title">This is my todo</h2>
   <ol class="container-content">
     @for (item of items; track $index) {
-      <li>{{ item }}</li>
+      <li>
+        <button class="content-button" (click)="handleClick(item.title)">
+          <p>{{ item.title }}</p>
+          <p>{{ item.text }}</p>
+        </button>
+      </li>
     }
   </ol>
 </div>

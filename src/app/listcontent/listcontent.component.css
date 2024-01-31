@@ -28,3 +28,7 @@
   padding: 20px;
 }
 
+.container .container-content .content-button{
+  background-color: transparent;
+  border: 0;
+}

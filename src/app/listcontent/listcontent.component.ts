@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NOTES } from '../Data/Notes';
 
 @Component({
   selector: 'app-listcontent',
@@ -8,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './listcontent.component.css'
 })
 export class ListcontentComponent {
-  items:Array<string> = ["Berangkat Sekolah","Kerja in projek","projek selesai","gajian","ngajak main anak orang","repeat"]
+  items = NOTES;
+  handleClick(title:string){
+    alert(title)
+  }
 }
