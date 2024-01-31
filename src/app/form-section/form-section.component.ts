@@ -10,4 +10,9 @@ import { FormsModule } from '@angular/forms';
 })
 export class FormSectionComponent {
   name = ""
+  password = ""
+
+  showAccount(){
+     return alert(this.password)
+  }
 }

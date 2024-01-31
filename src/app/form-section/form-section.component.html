@@ -1,5 +1,13 @@
 <div>
-  <h2>{{ name }}</h2>
-  <label for="">Name : </label>
-  <input type="text" [(ngModel)]="name">
+  <form (ngSubmit)="showAccount()" #myForm="ngForm" >
+    <div>
+      <label for="">Name:</label>
+      <input type="text" [(ngModel)]="name" name="name" required="">
+    </div>
+    <div>
+      <label for="">Password:</label>
+      <input type="text" [(ngModel)]="password" name="password" required="">
+    </div>
+    <button [disabled]="!myForm.form.valid" type="submit">Submit</button>
+  </form>
 </div>
